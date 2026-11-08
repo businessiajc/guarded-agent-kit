@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "agents": [
+    {"id": "daily", "name": "Daily run", "role": "Advances experiments and writes the daily report.", "type": "scheduled", "times": ["09:30"], "file": "runner/run_agent.py", "state": "active"}
+  ]
+}
