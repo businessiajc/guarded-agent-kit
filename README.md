@@ -22,7 +22,7 @@ Two layers, and the difference matters:
 | `agent.example.json` | Daily cap, allowed tools, modes (task, model, max turns, per-mode limit), session rules, programs to wait for. |
 | `tools/new_agent.py` | Creates an agent folder from the template, fills the path in the launcher, runs `git init`. |
 | `tools/scan_private.py` | Looks for e-mails, user paths, API-key-like strings, IBAN-like strings, French phone numbers and your own list of private terms, in every UTF-8 file. It does not read git history. |
-| `tests/` | 17 tests, no network, no SDK needed: `uv run --with pytest python -m pytest -q tests`. |
+| `tests/` | 17 tests, no network, no SDK needed: `uv run --with pytest --with anyio python -m pytest -q tests`. |
 
 ## Quick start (Windows)
 
